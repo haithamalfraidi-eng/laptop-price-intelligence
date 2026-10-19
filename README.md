@@ -1,5 +1,7 @@
 # Laptop Price Intelligence & Prediction
 
+[Live Streamlit application](https://laptop-price-intelligence-haitham.streamlit.app/) | [GitHub repository](https://github.com/haithamalfraidi-eng/laptop-price-intelligence)
+
 A Python analytics and regression portfolio project with a Streamlit dashboard. It describes the supplied dataset rather than current market prices or purchase value.
 
 ## Features
@@ -70,7 +72,7 @@ The model uses CPU brand rather than exact CPU performance and omits GPU, resolu
 
 Run `python run_pipeline.py` followed by `python -m unittest discover -s tests -v`. The suite exercises cleaning, storage conversion, strict/sparse peers, invalid manual inputs, disjoint holdout groups, Streamlit form submission, empty filters and missing dataset handling. Streamlit AppTest checks application execution and widgets; it does not replace a visual browser review. A headless HTTP health check was also performed during development.
 
-Validation completed: full pipeline, 14 passing automated tests, and headless Streamlit health/page endpoints both HTTP 200. A local Chrome browser review was performed; deployed visual review remains pending.
+Validation completed: full pipeline, 14 passing automated tests, and headless Streamlit health/page endpoints both HTTP 200. Local and deployed Chrome browser reviews were performed.
 
 ## Community Cloud deployment
 
@@ -80,4 +82,4 @@ Generated artifacts, local archives, credentials, `.env` and `.streamlit/secrets
 
 `ci-template.yml` contains a GitHub Actions workflow that installs dependencies, executes the pipeline and runs all automated tests on Python 3.11. To enable it, move it to `.github/workflows/ci.yml` using an account authorized to manage workflows. It is published as a template because the publishing authorization does not include the workflow scope. `evaluation/original_model_metrics.json` is the immutable original comparison input; reports are regenerated during startup and CI.
 
-Publication and live browser verification are pending account authorization until actual public URLs and a deployment check are recorded. Local AppTest or HTTP checks do not establish successful cloud deployment.
+Published on Streamlit Community Cloud at https://laptop-price-intelligence-haitham.streamlit.app/ using branch `main`, entry point `streamlit_app.py` and Python 3.11. On 2026-10-19, both public URLs returned HTTP 200 using an unauthenticated cookie-aware client. A fresh Chrome profile loaded the app without sign-in; all four tabs, manual prediction submission, expected evaluation metrics and three performance charts were checked. Screenshots of the deployed dashboard were visually reviewed. No application exceptions were observed in these checks. The Actions configuration remains a template (`ci-template.yml`), not an active CI workflow.
