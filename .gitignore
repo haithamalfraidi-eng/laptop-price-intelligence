@@ -1,0 +1,28 @@
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+.DS_Store
+# Large/transient model artifacts
+models/*.joblib
+# Database cache
+data/processed/*.db
+
+# Credentials and machine-specific files
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+*.key
+*.log
+# Generated artifacts are rebuilt from source on deployment
+models/*
+!models/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+reports/*
+!reports/.gitkeep
+# Local preservation snapshots are retained locally
+archive/
+publish/

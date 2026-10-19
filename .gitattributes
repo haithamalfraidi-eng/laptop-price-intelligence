@@ -1,0 +1,4 @@
+* text=auto eol=lf
+# Preserve the original source and raw dataset bytes exactly.
+original_lap.py -text
+data/raw/*.csv -text

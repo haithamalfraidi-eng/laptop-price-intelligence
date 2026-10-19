@@ -1,0 +1,21 @@
+{
+  "Baseline median": {
+    "cv_mae_mean": 4637956.956542553,
+    "cv_mae_std": 213747.73923485453
+  },
+  "Ridge Regression": {
+    "cv_mae_mean": 2519243.2711132285,
+    "cv_mae_std": 283058.08775426843
+  },
+  "Random Forest": {
+    "cv_mae_mean": 2507220.762444134,
+    "cv_mae_std": 398656.5803906298,
+    "test_mae": 2664197.2988465833,
+    "test_rmse": 4150024.5275236676,
+    "test_r2": 0.5377625001794384
+  },
+  "selected_model": "Random Forest",
+  "test_rows": 60,
+  "train_rows": 237,
+  "notes": "Price currency/unit and data date are not verified. Holdout metrics are illustrative for this sample, not proof of generalization."
+}

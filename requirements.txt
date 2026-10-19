@@ -1,0 +1,2 @@
+# Validated dependency closure for local and Community Cloud installs.
+-r requirements-lock.txt
